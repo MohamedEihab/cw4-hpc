@@ -20,6 +20,7 @@ public:
         , m_nOut(nOut)
         , m_synapses(synapses)
     {
+		dst_synapse_group.resize(m_nOut);
 		// group dst synase
 		for (auto & synapse : m_synapses) {
 			dst_synapse_group[synapse.dst].push_back(synapse);
